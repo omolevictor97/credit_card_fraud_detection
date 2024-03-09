@@ -8,5 +8,5 @@ seaborn
 tensorflow
 keras
 keras-tuner
-
+--user
 -e .
