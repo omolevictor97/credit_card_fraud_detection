@@ -3,6 +3,7 @@ from src.constants import selected_list
 from src.data_ingestion import DataIngestion
 from src.data_transformation import DataTransformation
 import pickle
+import joblib
 
 def model_train(X_train, y_train, train="X_train"):
     model = RandomForestClassifier(n_estimators=100, criterion='gini', max_depth=2, max_features=10, min_samples_leaf=3, min_samples_split=3)
@@ -29,6 +30,6 @@ if __name__ == "__main__":
     train_acc = model.score(X_train, y_train)
     test_acc = model.score(X_test, y_test)
 
-    with open("model.pkl", "wb") as file:
-        pickle.dump(model, file)
+    with open("model.joblib", "wb") as file:
+        joblib.dump(model, file)
     print("Test score is", test_acc)

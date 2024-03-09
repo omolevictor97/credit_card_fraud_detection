@@ -1,9 +1,10 @@
 from sklearn.preprocessing import StandardScaler
 import streamlit as st
 import pickle
+import joblib
 
-with open("model.pkl", "rb") as file:
-    loaded_file = pickle.load(file)
+with open("model.joblib", "rb") as file:
+    loaded_file = joblib.load(file)
 
 scaler = StandardScaler()
 
