@@ -5,3 +5,8 @@ scikit-learn
 streamlit
 gunicorn
 seaborn
+tensorflow
+keras
+keras-tuner
+
+-e .
