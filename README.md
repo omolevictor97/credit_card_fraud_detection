@@ -12,3 +12,5 @@ To start the program, certain tools are needed:
 <font color='Brown', width=30> To see the pre-installed packages/dependencies use</font> ```pip list```
 > Dependencies found in the file ```requirements.txt``` will be installed after using the following command, ```pip install -r requirements.txt```
 
+> Where to get dataset: (link) ["https://www.kaggle.com/datasets/mishra5001/credit-card]
+
